@@ -68,17 +68,4 @@ class AISondage_widget extends WP_widget
 		<?php
 		
 	}
-	
-	public function install(){
-    global $wpdb;
-
-    $wpdb->query("CREATE TABLE IF NOT EXISTS {$wpdb->prefix}zero_newsletter_email (id INT AUTO_INCREMENT PRIMARY KEY, email VARCHAR(255) NOT NULL);");
-	}
-	
-	public function uninstall(){
-    global $wpdb;
-
-    $wpdb->query("DROP TABLE IF EXISTS {$wpdb->prefix}zero_newsletter_email;");
-	}
-
 }
