@@ -20,7 +20,7 @@ function AISondage_init (){
 
 class AISondage_widget extends WP_widget
 {
-	
+
 	public function AISondage_widget(){
 		
 		$options = array(

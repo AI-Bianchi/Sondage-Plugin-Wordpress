@@ -9,7 +9,6 @@ License: GPL2
 */
 
 
-
 // valeur max
 var max = 100
 
