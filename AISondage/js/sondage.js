@@ -9,6 +9,8 @@ License: GPL2
 */
 
 
+"use strict";
+
 // valeur max
 var max = 100
 
@@ -31,7 +33,19 @@ var colors = {
 }
 
 // construction du  graph
-var draw = SVG('drawing').size('100%', 240)
+var draw = SVG('drawing').size('100%', 240);
+
+proposition('Faire du saut en parachute', 0, colors.proposition1);
+dessine('proposition1', 'votes', 40);
+
+
+proposition('Voyager sur la Lune', 80, colors.proposition2);
+dessine('proposition2', 'votes', 120);
+
+proposition('Perdre du poids', 160, colors.proposition3);
+dessine('proposition3', 'votes', 200);
+
+
 
 
 function dessine(proposition, version, y) {
@@ -53,12 +67,3 @@ function proposition(name, y, color) {
     .fill(color)
 }
 
-proposition('Faire du saut en parachute', 0, colors.proposition1)
-dessine('proposition1', 'votes', 40)
-
-
-proposition('Voyager sur la Lune', 80, colors.proposition2)
-dessine('proposition2', 'votes', 120)
-
-proposition('Perdre du poids', 160, colors.proposition3)
-dessine('proposition3', 'votes', 200)
