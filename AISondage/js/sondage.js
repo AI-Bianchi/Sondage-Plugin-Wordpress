@@ -13,21 +13,21 @@ License: GPL2
 var max = 100
 
 var data = {
-  propositiion1: {
+  proposition1: {
     votes: '10'
   }
-, propositiion2: {
+, proposition2: {
     votes: '20' 
   }
-, propositiion3: {
+, proposition3: {
     votes: '30' 
   }
 }
 
 var colors = {
-  propositiion1:   '#ff0066', 
-  propositiion2: '#05bba6', 
-  propositiion3: '#999999'
+  proposition1:   '#ff0066', 
+  proposition2: '#05bba6', 
+  proposition3: '#999999'
 }
 
 // construction du  graph
@@ -53,12 +53,12 @@ function proposition(name, y, color) {
     .fill(color)
 }
 
-proposition('Faire du saut en parachute', 0, colors.propositiion1)
-dessine('propositiion1', 'votes', 40)
+proposition('Faire du saut en parachute', 0, colors.proposition1)
+dessine('proposition1', 'votes', 40)
 
 
-proposition('Voyager sur la Lune', 80, colors.propositiion2)
-dessine('propositiion2', 'votes', 120)
+proposition('Voyager sur la Lune', 80, colors.proposition2)
+dessine('proposition2', 'votes', 120)
 
-proposition('Perdre du poids', 160, colors.propositiion3)
-dessine('propositiion3', 'votes', 200)
+proposition('Perdre du poids', 160, colors.proposition3)
+dessine('proposition3', 'votes', 200)
