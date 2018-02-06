@@ -8,7 +8,8 @@ Author URI: https://www.facebook.com/AI-Bianchi-829446067257329/
 License: GPL2
 */
 
-
+(function(SVG){
+  
 "use strict";
 
 // valeur max
@@ -66,4 +67,5 @@ function proposition(name, y, color) {
   	.font({ family: 'Inconsolata', size: 16 })
     .fill(color)
 }
-
+  
+})(SVG);
